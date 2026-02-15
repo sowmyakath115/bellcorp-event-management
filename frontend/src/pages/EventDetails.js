@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/api";
 
@@ -6,14 +6,17 @@ function EventDetails() {
   const { id } = useParams();
   const [event, setEvent] = useState(null);
 
-  useEffect(() => {
-    fetchEvent();
-  }, []);
+  
 
-  const fetchEvent = async () => {
-    const { data } = await API.get(`/api/events/${id}`);
-    setEvent(data);
-  };
+  const fetchEvent = useCallback(async () => {
+  const { data } = await API.get(`/api/events/${id}`);
+  setEvent(data);
+}, [id]);
+    
+useEffect(() => {
+    fetchEvent();
+  }, [fetchEvent]);
+
 
   const handleRegister = async () => {
   try {
