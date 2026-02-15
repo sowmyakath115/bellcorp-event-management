@@ -39,4 +39,4 @@ Frontend: https://vercel.com/sowmyakath115s-projects/bellcorp-event-management-p
 Backend: https://bellcorp-event-management.onrender.com/
 
 ## Demo Video
-(Add Drive link)
+https://drive.google.com/file/d/1vL-KptQ0uCUNiJEnJvMSQvKdYDR2Xfu3/view?usp=sharing
