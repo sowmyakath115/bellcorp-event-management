@@ -35,7 +35,7 @@ A full-stack MERN application that allows users to explore, register, and manage
 - category
 
 ## Live Links
-Frontend: https://vercel.com/sowmyakath115s-projects/bellcorp-event-management-ptit
+Frontend: https://bellcorp-event-management-ptit.vercel.app/
 Backend: https://bellcorp-event-management.onrender.com/
 
 ## Demo Video
